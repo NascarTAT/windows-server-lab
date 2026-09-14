@@ -28,5 +28,5 @@
 - `screenshots/02-ad-users.png`
 - `screenshots/03-dhcp-scope.png`
 - `screenshots/04-dns-zone.png`
-- `screenshots/05-client-whoami.png`
-- `screenshots/06-client-ipconfig.png`
+- `screenshots/05-client-whoami-ipconfig.png`
+
