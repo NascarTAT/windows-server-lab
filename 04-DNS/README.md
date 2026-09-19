@@ -85,6 +85,7 @@
 nslookup lab.local
 
 nslookup WIN-SKIC7TCTV5T
+```
 
 Ожидаемый результат: оба имени разрешаются в 192.168.1.10.
 
