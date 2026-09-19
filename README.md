@@ -24,14 +24,13 @@
 | Инструменты | Server Manager, PowerShell, DHCP-оснастка |
 
 ## 🗺️ Архитектура стенда
-VirtualBox — Internal Network "labnet"
 
-┌──────────────────────────┐ ┌──────────────────────────┐
-│ Windows Server 2019 │ │ Windows 10 Client │
-│ IP: 192.168.1.10/24 │◄──────►│ IP: DHCP (100–200) │
-│ Роли: AD DS, DNS, DHCP │ │ Домен: lab.local │
-│ Домен: lab.local │ │ │
-└──────────────────────────┘ └──────────────────────────┘
+```mermaid
+graph LR
+    SRV["Windows Server 2019<br/>IP: 192.168.1.10/24<br/>Роли: AD DS, DNS, DHCP<br/>Домен: lab.local"]
+    CLI["Windows 10 Client<br/>IP: DHCP 192.168.1.100–200<br/>Домен: lab.local"]
+    SRV <-->|"Internal Network: labnet"| CLI
+```
 ## ✅ Что реализовано
 
 - [x] Статический IP на сервере (192.168.1.10/24)
