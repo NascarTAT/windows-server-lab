@@ -50,6 +50,7 @@ graph LR
 3. [DHCP](./03-DHCP/README.md)
 4. [DNS](./04-DNS/README.md)
 5. [Подключение клиента к домену](./05-Client-Join/README.md)
+6. [OU и делегирование прав](https://github.com/NascarTAT/windows-server-lab/blob/main/06-OU-and-Delegation/README.md)
 
 ## 🧪 Проверка работоспособности
 
@@ -80,6 +81,7 @@ graph LR
 | 03. DHCP | [03-dhcp-scope.png](./03-DHCP/screenshots/03-dhcp-scope.png) |
 | 04. DNS | [04-dns-zone.png](./04-DNS/screenshots/04-dns-zone.png) |
 | 05. Client Join | [05-client-whoami-ipconfig.png](./05-Client-Join/screenshots/05-client-whoami-ipconfig.png) |
+| 06\. OU & Delegation | [01-ou-structure.png](https://github.com/NascarTAT/windows-server-lab/blob/main/06-OU-and-Delegation/screenshots/01-ou-structure.png) |
 
 ## 👤 Автор
 
