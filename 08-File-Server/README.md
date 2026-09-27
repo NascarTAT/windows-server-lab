@@ -1,8 +1,8 @@
-\# Шаг 8. Файловый сервер (File Server)
+# Шаг 8. Файловый сервер (File Server)
 
 
 
-\## Цель
+## Цель
 
 
 
@@ -10,11 +10,11 @@
 
 
 
-\## Что сделано
+## Что сделано
 
 
 
-\### 1. Создание шар на сервере
+### 1. Создание шар на сервере
 
 
 
@@ -26,31 +26,17 @@
 
 |------|------|------------|
 
-| `Wallpapers` | `C:\\Wallpapers` | Файлы обоев для GPO |
+| `Wallpapers` | `C:\Wallpapers` | Файлы обоев для GPO |
 
-| `HR` | `C:\\Shares\\HR` | Рабочая папка отдела HR |
-
-
-
-\### 2. Настройка прав на папку HR
+| `HR` | `C:\Shares\HR` | Рабочая папка отдела HR |
 
 
 
-\*\*Share Permissions (уровень сети):\*\*
+### 2. Настройка прав на папку HR
 
 
 
-| Группа | Право |
-
-|--------|-------|
-
-| `LAB\\HR\_Users` | Change |
-
-| `BUILTIN\\Администраторы` | Full |
-
-
-
-\*\*NTFS Permissions (уровень файловой системы):\*\*
+**Share Permissions (уровень сети):**
 
 
 
@@ -58,7 +44,21 @@
 
 |--------|-------|
 
-| `HR\_Users` | Modify |
+| `LAB\HR_Users` | Change |
+
+| `BUILTIN\Администраторы` | Full |
+
+
+
+**NTFS Permissions (уровень файловой системы):**
+
+
+
+| Группа | Право |
+
+|--------|-------|
+
+| `HR_Users` | Modify |
 
 | `СОЗДАТЕЛЬ-ВЛАДЕЛЕЦ` | Full |
 
@@ -68,23 +68,23 @@
 
 
 
-Группа «Пользователи» и «Пользователи домена» — \*\*удалены\*\* с обоих уровней.
+Группа «Пользователи» и «Пользователи домена» — **удалены** с обоих уровней.
 
 
 
-\### 3. Ключевое правило
+### 3. Ключевое правило
 
 
 
-> \*\*Итоговые права = самые строгие из Share + NTFS.\*\*
+> **Итоговые права = самые строгие из Share + NTFS.**
 
 
 
-Пользователь получит доступ только если он разрешён \*\*на обоих уровнях\*\*. Если хотя бы один уровень запрещает — доступ закрыт.
+Пользователь получит доступ только если он разрешён **на обоих уровнях**. Если хотя бы один уровень запрещает — доступ закрыт.
 
 
 
-\## Проверка доступа с клиента
+## Проверка доступа с клиента
 
 
 
@@ -98,63 +98,63 @@
 
 
 
-\*\*User3\*\* открыл `\\\\192.168.1.10\\HR`, создал файл `test-hr.txt` — успешно.
+**User3** открыл `\\192.168.1.10\HR`, создал файл `test-hr.txt` — успешно.
 
 
 
-\*\*User4\*\* получил ошибку: «Windows не может получить доступ к `\\\\192.168.1.10\\HR`. У вас нет разрешения на доступ к этому сетевому ресурсу».
+**User4** получил ошибку: «Windows не может получить доступ к `\\192.168.1.10\HR`. У вас нет разрешения на доступ к этому сетевому ресурсу».
 
 
 
-\## Разница Share vs NTFS
+## Разница Share vs NTFS
 
 
 
-| | \*\*Share Permissions\*\* | \*\*NTFS Permissions\*\* |
+| | **Share Permissions** | **NTFS Permissions** |
 
 |---|---|---|
 
-| \*\*Уровень\*\* | Сеть (SMB) | Файловая система |
+| **Уровень** | Сеть (SMB) | Файловая система |
 
-| \*\*Применяется\*\* | При доступе по сети | Локально и по сети |
+| **Применяется** | При доступе по сети | Локально и по сети |
 
-| \*\*Уровни прав\*\* | 3 (Full / Change / Read) | Много (Modify, Read, Write, ...) |
+| **Уровни прав** | 3 (Full / Change / Read) | Много (Modify, Read, Write, ...) |
 
-| \*\*Гибкость\*\* | Низкая | Высокая |
+| **Гибкость** | Низкая | Высокая |
 
-| \*\*Где настраивать\*\* | Свойства папки → Доступ | Свойства папки → Безопасность |
-
-
-
-\*\*Практика:\*\* Share настраивают \*\*широко\*\* (Change для всех доменных), NTFS — \*\*узко\*\* (HR\_Users). Итог определяет NTFS.
+| **Где настраивать** | Свойства папки → Доступ | Свойства папки → Безопасность |
 
 
 
-\## Скриншоты
+**Практика:** Share настраивают **широко** (Change для всех доменных), NTFS — **узко** (HR_Users). Итог определяет NTFS.
 
 
 
-\- \[01-ntfs-permissions.png](screenshots/01-ntfs-permissions.png) — NTFS-права папки HR
-
-\- \[02-share-permissions.png](screenshots/02-share-permissions.png) — Share-права (PowerShell)
-
-\- \[03-hr-user3-access.png](screenshots/03-hr-user3-access.png) — User3 (HR) имеет доступ
-
-\- \[04-sales-user4-denied.png](screenshots/04-sales-user4-denied.png) — User4 (Sales) отказано
+## Скриншоты
 
 
 
-\## Использованные технологии
+- [01-ntfs-permissions.png](screenshots/01-ntfs-permissions.png) — NTFS-права папки HR
+
+- [02-share-permissions.png](screenshots/02-share-permissions.png) — Share-права (PowerShell)
+
+- [03-hr-user3-access.png](screenshots/03-hr-user3-access.png) — User3 (HR) имеет доступ
+
+- [04-sales-user4-denied.png](screenshots/04-sales-user4-denied.png) — User4 (Sales) отказано
 
 
 
-\- Windows Server 2019 — File and Storage Services
+## Использованные технологии
 
-\- PowerShell: `New-SmbShare`, `Grant-SmbShareAccess`, `Revoke-SmbShareAccess`, `Get-SmbShareAccess`
 
-\- NTFS Permissions
 
-\- Share Permissions
+- Windows Server 2019 — File and Storage Services
 
-\- icacls
+- PowerShell: `New-SmbShare`, `Grant-SmbShareAccess`, `Revoke-SmbShareAccess`, `Get-SmbShareAccess`
+
+- NTFS Permissions
+
+- Share Permissions
+
+- icacls
 
