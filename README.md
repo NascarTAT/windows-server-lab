@@ -43,6 +43,8 @@ graph LR
 - [x] Создание GPO для OU Sales (обои + запрет панели управления)
 - [x] Создание GPO для OU HR (сетевой диск S:)
 - [x] Проверка применения GPO на клиенте
+- [x] Настройка файлового сервера (Share + NTFS Permissions)
+- [x] Разграничение доступа по отделам (HR_Users)
 
 ## 🚀 Пошаговая инструкция
 
@@ -55,6 +57,7 @@ graph LR
 5. [Подключение клиента к домену](./05-Client-Join/README.md)
 6. [OU и делегирование прав](https://github.com/NascarTAT/windows-server-lab/blob/main/06-OU-and-Delegation/README.md)
 7. [Групповые политики (GPO)](./07-GPO/README.md)
+8. [Файловый сервер](08-File-Server/README.md)
 
 ## 🧪 Проверка работоспособности
 
@@ -87,6 +90,7 @@ graph LR
 | 05. Client Join | [05-client-whoami-ipconfig.png](./05-Client-Join/screenshots/05-client-whoami-ipconfig.png) |
 | 06\. OU & Delegation | [01-ou-structure.png](https://github.com/NascarTAT/windows-server-lab/blob/main/06-OU-and-Delegation/screenshots/01-ou-structure.png) |
 | 07. GPO | [02-sales-control-panel-blocked.png](./07-GPO/screenshots/02-sales-control-panel-blocked.png) |
+| 08. File Server | [04-sales-user4-denied.png](./08-File-Server/screenshots/04-sales-user4-denied.png) |
 
 ## 👤 Автор
 
