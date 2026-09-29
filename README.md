@@ -45,6 +45,9 @@ graph LR
 - [x] Проверка применения GPO на клиенте
 - [x] Настройка файлового сервера (Share + NTFS Permissions)
 - [x] Разграничение доступа по отделам (HR_Users)
+- [x] Troubleshooting Case 01: блокировка учётной записи (Account Lockout)
+- [x] Troubleshooting Case 02: остановка службы DHCP-сервера
+- [x] Troubleshooting Case 03: сломанные NTFS-права на папке HR
 
 ## 🚀 Пошаговая инструкция
 
@@ -58,6 +61,7 @@ graph LR
 6. [OU и делегирование прав](https://github.com/NascarTAT/windows-server-lab/blob/main/06-OU-and-Delegation/README.md)
 7. [Групповые политики (GPO)](./07-GPO/README.md)
 8. [Файловый сервер](08-File-Server/README.md)
+9. [Troubleshooting (решение инцидентов)](./09-Troubleshooting/README.md)
 
 ## 🧪 Проверка работоспособности
 
@@ -91,6 +95,7 @@ graph LR
 | 06\. OU & Delegation | [01-ou-structure.png](https://github.com/NascarTAT/windows-server-lab/blob/main/06-OU-and-Delegation/screenshots/01-ou-structure.png) |
 | 07. GPO | [02-sales-control-panel-blocked.png](./07-GPO/screenshots/02-sales-control-panel-blocked.png) |
 | 08. File Server | [04-sales-user4-denied.png](./08-File-Server/screenshots/04-sales-user4-denied.png) |
+| 09. Troubleshooting | [01-symptom.png](./09-Troubleshooting/Case-01-Account-Lockout/screenshots/01-symptom.png) |
 
 ## 👤 Автор
 
