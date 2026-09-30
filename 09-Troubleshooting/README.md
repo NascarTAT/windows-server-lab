@@ -23,6 +23,8 @@
 | 01 | [Account Lockout](Case-01-Account-Lockout/README.md) | Блокировка учётной записи | Event Viewer (4740), AD, разблокировка, безопасность |
 | 02 | [DHCP Stopped](Case-02-DHCP-Stopped/README.md) | Сбой сети, APIPA | ipconfig, диагностика DHCP, Event Viewer (7040) |
 | 03 | [NTFS Broken](Case-03-NTFS-Broken/README.md) | Отказ доступа к папке | Share vs NTFS, `icacls`, AD-группы |
+| 04 | [DNS Broken](Case-04-DNS-Broken/README.md) | Проблема разрешения имён | DNS, A-записи, Event Viewer (517), Netlogon |
+| 05 | [GPO Broken](Case-05-GPO-Broken/README.md) | Отвалилась привязка GPO | GPMC, gpresult, Get-GPInheritance, привязки GPO |
 
 
 

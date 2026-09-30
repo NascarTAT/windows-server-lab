@@ -48,6 +48,8 @@ graph LR
 - [x] Troubleshooting Case 01: блокировка учётной записи (Account Lockout)
 - [x] Troubleshooting Case 02: остановка службы DHCP-сервера
 - [x] Troubleshooting Case 03: сломанные NTFS-права на папке HR
+- [x] Troubleshooting Case 04: удаление A-записи контроллера домена (DNS)
+- [x] Troubleshooting Case 05: удаление привязки GPO для OU Sales
 
 ## 🚀 Пошаговая инструкция
 
