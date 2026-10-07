@@ -50,6 +50,8 @@ graph LR
 - [x] Troubleshooting Case 03: сломанные NTFS-права на папке HR
 - [x] Troubleshooting Case 04: удаление A-записи контроллера домена (DNS)
 - [x] Troubleshooting Case 05: удаление привязки GPO для OU Sales
+- [x] Создание Knowledge Base из 7 статей для пользователей
+- [x] Публикация KB на файловом сервере (PDF в шаре KnowledgeBase)
 
 ## 🚀 Пошаговая инструкция
 
@@ -64,6 +66,7 @@ graph LR
 7. [Групповые политики (GPO)](./07-GPO/README.md)
 8. [Файловый сервер](08-File-Server/README.md)
 9. [Troubleshooting (решение инцидентов)](./09-Troubleshooting/README.md)
+10. [Knowledge Base (база знаний для пользователей)](./10-Knowledge-Base/README.md)
 
 ## 🧪 Проверка работоспособности
 
