@@ -52,6 +52,8 @@ graph LR
 - [x] Troubleshooting Case 05: удаление привязки GPO для OU Sales
 - [x] Создание Knowledge Base из 7 статей для пользователей
 - [x] Публикация KB на файловом сервере (PDF в шаре KnowledgeBase)
+- [x] Развёртывание osTicket (IIS + PHP + MySQL)
+- [x] Обработка 10 тикетов L1 (полный цикл Service Desk)
 
 ## 🚀 Пошаговая инструкция
 
@@ -67,6 +69,7 @@ graph LR
 8. [Файловый сервер](08-File-Server/README.md)
 9. [Troubleshooting (решение инцидентов)](./09-Troubleshooting/README.md)
 10. [Knowledge Base (база знаний для пользователей)](./10-Knowledge-Base/README.md)
+11. [Тикет-система osTicket](./11-osTicket/README.md)
 
 ## 🧪 Проверка работоспособности
 
