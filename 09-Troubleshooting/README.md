@@ -25,6 +25,7 @@
 | 03 | [NTFS Broken](Case-03-NTFS-Broken/README.md) | Отказ доступа к папке | Share vs NTFS, `icacls`, AD-группы |
 | 04 | [DNS Broken](Case-04-DNS-Broken/README.md) | Проблема разрешения имён | DNS, A-записи, Event Viewer (517), Netlogon |
 | 05 | [GPO Broken](Case-05-GPO-Broken/README.md) | Отвалилась привязка GPO | GPMC, gpresult, Get-GPInheritance, привязки GPO |
+| 06 | [Print Spooler](Case-06-Print-Spooler/README.md) | Принтеры не видны | Print Spooler, очередь печати, сетевой принтер |
 
 
 

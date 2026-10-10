@@ -54,6 +54,7 @@ graph LR
 - [x] Публикация KB на файловом сервере (PDF в шаре KnowledgeBase)
 - [x] Развёртывание osTicket (IIS + PHP + MySQL)
 - [x] Обработка 10 тикетов L1 (полный цикл Service Desk)
+- [x] Troubleshooting Case 06: остановка службы Print Spooler (принтеры не видны)
 
 ## 🚀 Пошаговая инструкция
 
