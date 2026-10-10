@@ -55,6 +55,7 @@ graph LR
 - [x] Развёртывание osTicket (IIS + PHP + MySQL)
 - [x] Обработка 10 тикетов L1 (полный цикл Service Desk)
 - [x] Troubleshooting Case 06: остановка службы Print Spooler (принтеры не видны)
+- [x] Troubleshooting Case 07: пустой фильтр безопасности GPO (чёрный экран)
 
 ## 🚀 Пошаговая инструкция
 
